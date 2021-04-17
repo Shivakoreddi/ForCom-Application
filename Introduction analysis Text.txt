@@ -1,0 +1,70 @@
+
+
+#Forum community application
+
+Description: 
+
+Application will provide platform for users to discuss through forums
+
+objectives: 
+
+login
+create topics for discussions
+view/read topics
+comment on existing topic thread **
+close topics
+search topics **
+add emojis in comments *
+follow topics**
+list hot topics **
+follow other users ** 
+logout
+
+
+Technology stack : 
+
+python - flask,requests,sqlite,rabbitMQ,pika
+database - mysql or amazon rds,sqlite
+search db - mongo db to store json
+message queue - rabbitMQ,pika
+cache - memcache
+ui - html,css
+documentation - word,notepad++
+repository - github
+
+
+
+
+References:
+
+Sqlite:
+
+https://www.youtube.com/watch?v=pd-0G0MigUA
+
+MQ: 
+https://pika.readthedocs.io/en/stable/intro.html
+https://www.rabbitmq.com/tutorials/tutorial-two-python.html
+
+
+API/Flask:
+
+https://www.fullstackpython.com/table-of-contents.html
+https://httpbin.org/#/Auth
+https://xkcd.com/353/
+https://docs.python.org/3.2/library/http.server.html
+https://sonusharma-mnnit.medium.com/building-a-microservice-in-python-ff009da83dac
+https://www.freecodecamp.org/news/build-a-simple-json-api-in-python/
+
+Web Design:
+
+https://www.c-sharpcorner.com/article/creating-a-simple-login-page-using-html-and-css/
+
+Data:
+
+https://www.youtube.com/watch?v=JqDAEH_2t6M&list=PLmp4AHm0u1g0Adn8HwWIe-G_xTn_jqOvf
+
+
+
+
+
+
