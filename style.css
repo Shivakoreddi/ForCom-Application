@@ -2,18 +2,18 @@ body
 {
     margin: 0;
     padding: 0;
-    background-image:url('pf41.jpg');
+    background-image:url('images/pf41.jpg');
     background-repeat:no-repeat;
     background-size:cover;
     font-family: 'Arial';
 }
 .login{
-        width: 382px;
+        width: 384px;
         overflow: hidden;
         margin: auto;
-        margin: 20 0 0 450px;
-        padding: 80px;
-        background: #23463f;
+        margin: 10 0 0 250px;
+        padding: 10px;
+
         border-radius: 15px ;
 
 }
@@ -21,6 +21,10 @@ h2{
     text-align: center;
     color: white;
     padding: 20px;
+}
+header{
+text-align:right;
+
 }
 label{
     color: #08ffd1;
@@ -58,4 +62,10 @@ span{
 a{
     float: right;
     background-color: grey;
+}
+form{
+
+    text-align:left;
+
+
 }
