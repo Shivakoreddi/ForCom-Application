@@ -6,55 +6,37 @@ body
     background-repeat:no-repeat;
     background-size:cover;
     font-family: 'Arial';
+
 }
 .login{
+
+        float:left;
         width: 384px;
-        overflow: hidden;
         margin: auto;
-        margin: 10 0 0 250px;
         padding: 10px;
+        text-align:top;
+        border-radius: 5px ;
 
-        border-radius: 15px ;
-
+}
+.img{
+        margin: auto;
+        padding: 10px;
+        text-align:right;
+        border-radius: 8px ;
 }
 h2{
     text-align: center;
     color: white;
     padding: 20px;
 }
-header{
-text-align:right;
 
-}
+
 label{
     color: #08ffd1;
     font-size: 17px;
-}
-#Uname{
-    width: 300px;
-    height: 30px;
-    border: none;
-    border-radius: 3px;
-    padding-left: 8px;
-}
-#Pass{
-    width: 300px;
-    height: 30px;
-    border: none;
-    border-radius: 3px;
-    padding-left: 8px;
 
 }
-#log{
-    width: 300px;
-    height: 30px;
-    border: none;
-    border-radius: 17px;
-    padding-left: 7px;
-    color: blue;
 
-
-}
 span{
     color: white;
     font-size: 17px;
@@ -62,10 +44,4 @@ span{
 a{
     float: right;
     background-color: grey;
-}
-form{
-
-    text-align:left;
-
-
 }
