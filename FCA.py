@@ -1,6 +1,13 @@
-from flask import Flask,render_template,url_for
+from flask import request,Flask,render_template,url_for,redirect,flash
+from forms import RegistrationForm,LoginForm
 import json
+import sqlite3
+import forum_db_connection as fd
+
+
 app = Flask(__name__)
+
+app.config['SECRET_KEY'] = 'd6b56b65c26cda9168d90a7d4237802c'
 
 posts = [
     {
@@ -21,17 +28,29 @@ posts = [
 class Forum():
     @app.route("/home")
     def home():
-        return render_template('home.html',posts= posts)
+        return render_template('home.html',posts = posts)
 
     @app.route("/about")
     def about():
         return render_template('about.html')
-    @app.route("/snippets")
-    def get():
-        return {"name":"recipe", "expires_in": 30, "snippet":"1 apple"}
 
-    @app.route("/recipe")
-    def post(self):
-        return self.content
+    @app.route("/register",methods = ['GET','POST'])
+    def register():
+        form = RegistrationForm()
+        if form.validate_on_submit():
+            flash(f'Account created for {form.username.data}!','success')
+            return redirect(url_for('home'))
+        return render_template('register.html', title='Register', form=form)
+
+    @app.route("/login",methods=['GET','POST'])
+    def login():
+        form = LoginForm()
+        if form.validate_on_submit():
+            if form.username.data=='admin' and form.password.data=='password':
+                flash(f'You have been logged in', 'success')
+                return redirect(url_for('home'))
+            else:
+                flash(f'Login Unsuccessful', 'danger')
+        return render_template('login.html', title='Login', form=form)
 if  __name__=="__main___":
     app.run(debug=True)

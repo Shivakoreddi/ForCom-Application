@@ -54,6 +54,10 @@ https://xkcd.com/353/
 https://docs.python.org/3.2/library/http.server.html
 https://sonusharma-mnnit.medium.com/building-a-microservice-in-python-ff009da83dac
 https://www.freecodecamp.org/news/build-a-simple-json-api-in-python/
+https://python-adv-web-apps.readthedocs.io/en/latest/flask_forms.html
+https://hackersandslackers.com/flask-wtforms-forms/
+https://www.youtube.com/watch?v=Qr4QMBUPxWo
+https://hackersandslackers.com/your-first-flask-application
 
 Web Design:
 
@@ -64,6 +68,18 @@ Data:
 https://www.youtube.com/watch?v=JqDAEH_2t6M&list=PLmp4AHm0u1g0Adn8HwWIe-G_xTn_jqOvf
 
 
+Desgin Principals:
+
+scalability:-
+identifiy load parameters?
+api services - number of requests expected
+database -read-write ratios
+message queue size
+measure performance ?
+
+
+maintainability:-
+operability standards for future changes?
 
 
 
